@@ -50,6 +50,7 @@ h2 {
     max-width: 120rem;
     margin: 0 auto;
 }
+
 /* Boton */
 
 .boton {
@@ -408,20 +409,34 @@ h2 {
 
 /* Profile */
 .profile-container {
-    margin: 1rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: .5rem;
-    background-color: var(--negro   );
-    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    width: min(50rem);
+    border-radius: 2rem;
+}
+
+.navbar {
+    margin-bottom: 2rem;
 }
 
 .one {
-    border-color: var(--negro);
-    background-color: var(--azul);
+    border-color: var(--blanco);
+    background-color: var(--blanco);
     grid-column: 1 / 2;
-    grid-row: 1;
-    margin: 1rem 0 1rem 1rem;
+    grid-row: 1 / 5;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.one > * {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5rem;
 }
 
 .two {
@@ -429,15 +444,8 @@ h2 {
     background-color: var(--gris);
     grid-column: 2 / 5;
     grid-row: 1 / 2;
+    border-radius: 2rem;
     margin: 1rem;
-}
-
-.three {
-    border-color: var(--negro);
-    background-color: var(--gris);
-    grid-column: 1;
-    grid-row: 2 / 5;
-    margin: 0 0 1rem 1rem;
 }
 
 .four {
@@ -445,5 +453,18 @@ h2 {
     background-color: var(--secundario);
     grid-column: 2 / 5;
     grid-row: 2 / 5;
-    margin: 0 1rem 1rem 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+@media (min-width: 768px) {
+    .profile-container {
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        gap: .5rem;
+        background-color: var(--negro   );
+        grid-auto-rows: minmax(10rem, auto);
+        border-radius: 2rem; 
+        margin: 0 auto;
+    }
 }
