@@ -1,0 +1,61 @@
+/* Plans */
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.pricing-plan {
+    flex: 1;
+    max-width: 40rem;
+    padding: 2rem;
+    background-color: var(--secundario);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.plan-title {
+    border-radius: 1rem;
+    background-image: linear-gradient(to top, var(--secundario) 0%, var(--blanco) 100%);
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to bottom, var(--secundario) 0%, var(--blanco) 100% );
+    border-radius: 1rem;
+}
+
+.plan-price {
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: var(--blanco);
+    margin-bottom: 10px;
+}
+
+.plan-features {
+    list-style: none;
+    background-image: linear-gradient(to top, var(--secundario) 0%, var(--blanco) 100%);
+    border-radius: 1rem;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to bottom, var(--secundario) 0%, var(--blanco) 100% );
+    border-radius: 1rem;
+}
+
+.plan-features li {
+    margin-bottom: 1rem;
+}
+
+.plan-button {
+    padding: 10px;
+    background-color: var(--primario-obscuro);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    border-color: var(--negro);
+    padding-left: 5rem;
+    padding-right: 5rem;
+}

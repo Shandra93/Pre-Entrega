@@ -1,0 +1,101 @@
+/* Profile */
+.profile-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    width: min(50rem);
+    border-radius: 2rem;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+}
+
+.one {
+    border-color: var(--blanco);
+    background-image: linear-gradient(to top, var(--negro) 0% , var(--blanco) 100%);
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.one > * {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.one_head {
+    margin: 0 auto;
+    padding: 5rem
+}
+
+.two {
+    border-color: var(--negro);
+    background-image: linear-gradient(to top, var(--negro) 0% , var(--blanco) 100%);
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    border-radius: 2rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.four {
+    border-color: var(--secundario);
+    background-image: linear-gradient(to top, var(--negro) 0% , var(--blanco) 100%);
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+
+    height: 30rem;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+.four > h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    color: var(--primario-obscuro);
+}
+
+.four > p {
+    text-align: center;
+    margin: 0rem;
+}
+
+@media (min-width: 768px) {
+    .profile-container {
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        gap: .5rem;
+        background-color: var(--negro   );
+        grid-auto-rows: minmax(10rem, auto);
+        border-radius: 2rem; 
+        margin: 0 auto;
+    }
+
+    .Bio > div {
+        margin: 10rem;
+        border: 10rem;
+    }
+
+}
+
+.Bio {
+    width: min(50rem);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.Bio > div {
+    padding: 5rem;
+
+    width: min(50rem);
+    text-align: center;
+    margin: 0 auto;
+}
