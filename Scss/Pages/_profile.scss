@@ -1,4 +1,12 @@
 /* Profile */
+
+body {
+    background-image: linear-gradient(to bottom, black 0%, #fb0101 100% );
+    font-size: 1.6rem;
+    line-height: 1.5;
+    height: 100%;
+}
+
 .profile-container {
     padding: 1rem;
     display: flex;
@@ -85,7 +93,7 @@
 
     height: 100%;
     border-radius: 2rem;
-    margin: 0 auto;
+    margin: 1rem;
     text-align: center;
     justify-content: center;
     
