@@ -1,7 +1,7 @@
 /* Boton */
 
 .boton {
-    background-color: var(--primario-obscuro  );
+    background-color: $primary;
     color: $blanco;
     padding: 1rem;
     margin-top: 1rem;
@@ -13,6 +13,11 @@
     width: 60%;
     text-align: center;
     border: none;
+
+    &:hover {
+        background-image: linear-gradient(to bottom, $primary 0%, $negro 100%);
+    }
+
 }
 
 @media (min-width: 768px) {

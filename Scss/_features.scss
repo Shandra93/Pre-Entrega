@@ -16,3 +16,15 @@
     width: 1rem;
     height: 1rem;
 }
+
+
+.feature-text{
+    @include center;
+    color: $blanco;
+    margin: 10rem 10rem 0rem 10rem;
+}
+
+.feature_header > p {
+    margin: 0 10rem 10rem 10rem;
+    color: $blanco;
+}

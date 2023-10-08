@@ -9,16 +9,17 @@ html {
 
 /** Globales **/
 body {
+  background-image: linear-gradient(to bottom, black 0%, #fb0101 100%);
   font-size: 1.6rem;
   line-height: 1.5;
-  background-image: linear-gradient(to bottom, black 0%, #fb0101 100%);
-  height: 100rem;
+  height: 150rem;
 }
 
 p {
   font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: var(--blanco);
+  color: #fff;
+  text-align: center;
 }
 
 h1, h2, h3 {
@@ -45,7 +46,7 @@ h2 {
 
 /* Boton */
 .boton {
-  background-color: var(--primario-obscuro);
+  background-color: #fb0101;
   color: #fff;
   padding: 1rem;
   margin-top: 1rem;
@@ -57,6 +58,9 @@ h2 {
   width: 60%;
   text-align: center;
   border: none;
+}
+.boton:hover {
+  background-image: linear-gradient(to bottom, #fb0101 0%, #000000 100%);
 }
 
 @media (min-width: 768px) {
@@ -252,7 +256,7 @@ h2 {
 
 .one {
   border-color: #fff;
-  background-image: linear-gradient(to top, var(--negro) 0%, var(--blanco) 100%);
+  background-image: linear-gradient(to top, #000000 0%, #fff 100%);
   grid-column: 1/2;
   grid-row: 1/5;
   border-radius: 2rem;
@@ -273,7 +277,7 @@ h2 {
 
 .two {
   border-color: #000000;
-  background-image: linear-gradient(to top, var(--negro) 0%, var(--blanco) 100%);
+  background-image: linear-gradient(to top, #000000 0%, #fff 100%);
   grid-column: 2/5;
   grid-row: 1/2;
   border-radius: 2rem;
@@ -281,9 +285,13 @@ h2 {
   text-align: center;
 }
 
+.stats {
+  margin: 0 auto;
+}
+
 .four {
   border-color: #f0e1a4;
-  background-image: linear-gradient(to top, var(--negro) 0%, var(--blanco) 100%);
+  background-image: linear-gradient(to top, #000000 0%, #fff 100%);
   grid-column: 2/5;
   grid-row: 2/5;
   height: 30rem;
@@ -307,11 +315,11 @@ h2 {
   .profile-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
+    gap: 0rem;
+    border: 10rem;
     background-color: #000000;
     grid-auto-rows: minmax(10rem, auto);
     border-radius: 2rem;
-    margin: 0 auto;
   }
   .Bio > div {
     margin: 10rem;
@@ -319,7 +327,7 @@ h2 {
   }
 }
 .Bio {
-  width: 50rem;
+  width: 100rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -401,6 +409,19 @@ h2 {
   height: 50%;
   width: 1rem;
   height: 1rem;
+}
+
+.feature-text {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  color: #fff;
+  margin: 10rem 10rem 0rem 10rem;
+}
+
+.feature_header > p {
+  margin: 0 10rem 10rem 10rem;
+  color: #fff;
 }
 
 /* Contacto */
