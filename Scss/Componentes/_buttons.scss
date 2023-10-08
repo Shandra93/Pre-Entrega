@@ -1,7 +1,7 @@
 /* Boton index */
 .boton {
-    background-color: $primary;
-    color: $secundario;
+    background-color: $Primary;
+    color: $Secondary;
     padding: 1rem;
     margin-top: 1rem;
     font-size: 2rem;
@@ -12,12 +12,12 @@
     width: 60%;
     text-align: center;
     border: none;
-    background-image: linear-gradient(to top, $primary 0%, $negro 100%);
+    background-image: linear-gradient(to top, $Primary 0%, $Black 100%);
 
 
     &:hover {
-        background-image: linear-gradient(to bottom, $primary 0%, $negro 100%);
-        color: $blanco;
+        background-image: linear-gradient(to bottom, $Primary 0%, $Black 100%);
+        color: $White;
     }
 
 }
@@ -33,5 +33,5 @@
 }
 
 .iconos {
-    color: $negro;
+    color: $Black;
 }

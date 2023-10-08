@@ -1,9 +1,9 @@
 /* Titulos */
 
 .header {
-    background-image: linear-gradient(to top, $primary-dark 20%, $negro 100%);
+    background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
     font-size: auto;
-    color: $blanco;
+    color: $White;
     height: 13rem;
     text-align: center;
     justify-content: space-around;
@@ -14,46 +14,6 @@
 }
 
 
-
-@media (min-width: 768px) {
-    .navegacion-principal {
-        flex-direction: row;
-        justify-content: space-between;
-    a {
-        display: block;
-        text-align: center;
-        color: var($blanco);
-        text-decoration: none;
-        font-size: 2rem;
-        font-weight: 700;
-        padding: 1rem;
-    }
-    &:hover {
-        background-color: $primary;
-        color: $blanco;
-        }
-    }
-}
-
-
-
-/* Resolucion movil */
-@media (min-width: 768px) {
-
-    .contenido-hero {
-        background-image: url(../Assets/Articles_Header.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 450px;
-
-        p {
-            color: $blanco;
-        }
-    }
-
-}
-
-/* Hero */
 
 .hero {
     background-image: url(../Assets/dungeons-and-dragons-leker-guci.jpg);
@@ -82,28 +42,19 @@
 }
 .contenido-hero h2, 
 .contenido-hero p {
-    color: $blanco;
+    color: $White;
 }
 .contenido-hero .ubicacion {
     display: flex;
     align-items: flex-end;
 }
 
-/** Servicios **/
-@media (min-width: 768px) {
-    .servicios {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 5rem;
-        margin: 5rem;
-    }
-}
 
 .servicio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to top, $primary-dark 20%, $negro 100%);
+    background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
     z-index: -1;
     border-radius: 1rem;
     
@@ -117,7 +68,7 @@
     margin: 2rem;
     height: 15rem;
     width: 15rem;
-    background-color: $primary;
+    background-color: $Primary;
     border-radius: 50%;
     display: flex;
     justify-content: space-evenly;

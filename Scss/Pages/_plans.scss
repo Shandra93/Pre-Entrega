@@ -1,13 +1,6 @@
 /* Plans */
 
-/** Servicios **/
 
-@media (max-width: 1250px) {
-    .pricing-container {
-        flex-direction: column;
-        height: 100%;
-    }
-}
 
 .pricing-container {
     display: flex;
@@ -29,23 +22,23 @@
     .plan-price {
         font-size: 5rem;
         font-weight: bold;
-        color: $negro;
+        color: $Black;
         margin-bottom: 10px;
         
         &:hover {
             font-weight: 700;
-            color: $blanco;
+            color: $White;
         }
     }
     
     .plan-features, .plan-title  {
         font-weight: 700;
         list-style: none;
-        background-image: linear-gradient(to top, $secundario 0%, $blanco 100%);
+        background-image: linear-gradient(to top, $Secondary 0%, $White 100%);
         border-radius: 1rem;
         padding: 1rem;
         margin: 1rem;
-        background-image: linear-gradient(to bottom, $secundario 0%, $blanco  100% );
+        background-image: linear-gradient(to bottom, $Secondary 0%, $White 100% );
         border-radius: 1rem;
     }
     
@@ -55,16 +48,16 @@
     
     .plan-button {
         padding: 10px;
-        background-image: linear-gradient(to top, $negro 0%, $primary-dark 100% );
-        color: $blanco;
+        background-image: linear-gradient(to top, $Black 0%, $Primary-dark 100% );
+        color: $White;
         border-radius: 5px;
         border: none;
-        border-color: $negro;
+        border-color: $Black;
         padding-left: 5rem;
         padding-right: 5rem;
 
         &:hover {
-            background-image: linear-gradient(to bottom, $secundario-obscuro 0%, $negro 100%);
+            background-image: linear-gradient(to bottom, $Secondary-dark 0%, $Black 100%);
         }
     }
 }

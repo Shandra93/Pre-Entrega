@@ -6,7 +6,7 @@
     justify-content: center;
     margin: 0 auto;
 
-    width: min(50rem);
+    width: 50rem;
     border-radius: 2rem;
 }
 
@@ -15,8 +15,8 @@
 }
 
 .one {
-    border-color: $blanco;
-    background-image: linear-gradient(to top, $negro 0% , $blanco 100%);
+    border-color: $White;
+    background-image: linear-gradient(to top, $Black 0% , $White 100%);
     grid-column: 1 / 2;
     grid-row: 1 / 5;
     border-radius: 2rem;
@@ -28,7 +28,13 @@
     justify-content: center;
     margin-bottom: 5rem;
     }   
-}
+
+    .player {
+        &:hover {
+            size: 7rem;
+        }
+    }
+}    
 
 .one_head {
     margin: 0 auto;
@@ -36,10 +42,10 @@
 }
 
 .two {
-    border-color: $negro;
-    background-image: linear-gradient(to top, $negro 0% , $blanco 100%);
+    border-color: $Black;
+    background-image: linear-gradient(to top, $Black 0% , $White 100%);
     grid-column: 2 / 5;
-    grid-row: 1 / 2;
+    grid-row: 1 / 3;
     border-radius: 2rem;
     margin: 1rem;
     text-align: center;
@@ -50,12 +56,12 @@
 }
 
 .four {
-    border-color: $secundario;
-    background-image: linear-gradient(to top, $negro 0% , $blanco 100%);
+    border-color: $Secondary;
+    background-image: linear-gradient(to top, $Black 0% , $White 100%);
     grid-column: 2 / 5;
-    grid-row: 2 / 5;
+    grid-row: 3 / 5;
 
-    height: 30rem;
+    height: 35rem;
     margin: 1rem;
     border-radius: 2rem;
     
@@ -63,43 +69,49 @@
     text-align: center;
     margin: 0 auto;
     padding: 2rem;
-    color: $primary-dark;
+    color: $Primary-dark;
     }
     
     p {
     text-align: center;
-    margin: 0rem;
+    margin: 0;
     }
 }
 
-@media (min-width: 768px) {
-    .profile-container {
-        display: grid;
-        grid-template-columns: repeat(4 , 1fr);
-        gap: 0rem;
-        border: 10rem;
-        background-color: $negro;
-        grid-auto-rows: minmax(10rem, auto);
-        border-radius: 2rem; 
-}
+.five {
+    border-color: $Secondary;
+    background-image: linear-gradient(to top, $Black 0% , $White 100%);
+    grid-column: 5 / 1;
 
-.Bio > div {
-    margin: 10rem;
-    border: 10rem;
-}
-
+    height: 100%;
+    border-radius: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    
+        P {
+        color: $White;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 3rem;
+        padding-top: 2rem;
+    }
 }
 
 .Bio {
-width: min(100rem);
-text-align: center;
-margin: 0 auto;
-}
+    background-image: linear-gradient(to top, $Black 0% , $White 100%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
 
-.Bio > div {
-padding: 5rem;
+    width: 50rem;
+    border-radius: 2rem;
 
-width: min(50rem);
-text-align: center;
-margin: 0 auto;
+    div {
+        text-align: center;
+        padding: 5rem;
+    }
 }
