@@ -49,14 +49,20 @@
     align-items: flex-end;
 }
 
+.hero2 {
+    background-image: linear-gradient(to top, $Black 0%, $Secondary 50%, $Primary-dark 100%);
+}
+
 
 .servicio {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
     z-index: -1;
     border-radius: 1rem;
+    margin: 1rem;
     
 }
     

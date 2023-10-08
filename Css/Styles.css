@@ -103,13 +103,19 @@ h3 {
   align-items: flex-end;
 }
 
+.hero2 {
+  background-image: linear-gradient(to top, #000000 0%, #f0e1a4 50%, #901111 100%);
+}
+
 .servicio {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   z-index: -1;
   border-radius: 1rem;
+  margin: 1rem;
 }
 
 p {
@@ -445,7 +451,14 @@ legend {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 4rem;
-    margin: 1rem;
+    margin: 3rem 1rem 5rem 1rem;
+  }
+  .contenido-hero2 {
+    padding: 0 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    gap: 20px;
   }
   /* Estilos para contenedor-campos y formulario */
   .contenedor-campos {
