@@ -1,46 +1,10 @@
-/* Boton */
-
-.boton {
-    background-color: $primary;
-    color: $blanco;
-    padding: 1rem;
-    margin-top: 1rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: .5rem;
-    width: 60%;
-    text-align: center;
-    border: none;
-
-    &:hover {
-        background-image: linear-gradient(to bottom, $primary 0%, $negro 100%);
-    }
-
-}
-
-@media (min-width: 768px) {
-    .boton {
-        width: auto;
-    }       
-}
-
-.boton:hover {
-    cursor: pointer;
-}
-
-.iconos {
-    color: var(--negro);
-}
-
 /* Titulos */
 
 .header {
     background-image: linear-gradient(to top, var(--primario-obscuro) 20%, var(--negro) 100%);
     font-size: auto;
-    color: var(--blanco);
-    height: 10rem;
+    color: $blanco;
+    height: 20rem;
     text-align: center;
     justify-content: space-around;
     align-items: center;
@@ -57,7 +21,7 @@
     margin: 2rem;
     border-radius: 2rem;
     border-style: solid;
-    border-color: var(--blanco);
+    border-color: $blanco;
     border-width: .1rem;
 }
 
@@ -70,22 +34,23 @@
     .navegacion-principal {
         flex-direction: row;
         justify-content: space-between;
+    a {
+        display: block;
+        text-align: center;
+        color: var($blanco);
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem;
+    }
+    &:hover {
+        background-color: $primary;
+        color: $blanco;
+        }
     }
 }
 
-.navegacion-principal a {
-    display: block;
-    text-align: center;
-    color: var(--blanco);
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 1rem;
-}
-.navegacion-principal a:hover {
-    background-color: var(--primario);
-    color: var(--blanco);
-}
+
 
 /* Resolucion movil */
 @media (min-width: 768px) {

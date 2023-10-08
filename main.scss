@@ -1,5 +1,4 @@
 @import "Scss/colors";
-@import "Scss/buttons";
 @import "Scss/_mixins/mixins.scss";
 @import "Scss/globales";
 @import "Scss/index";
@@ -7,6 +6,7 @@
 @import "Scss/plans";
 @import "Scss/features";
 @import "Scss/contact";
+@import "Scss/buttons";
 
 :root {
     --primario: #fb0101;

@@ -1,0 +1,36 @@
+/* Boton index */
+.boton {
+    background-color: $primary;
+    color: $secundario;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+    width: 60%;
+    text-align: center;
+    border: none;
+    background-image: linear-gradient(to top, $primary 0%, $negro 100%);
+
+
+    &:hover {
+        background-image: linear-gradient(to bottom, $primary 0%, $negro 100%);
+    }
+
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }       
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.iconos {
+    color: var(--negro);
+}
