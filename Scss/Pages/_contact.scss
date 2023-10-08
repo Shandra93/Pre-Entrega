@@ -20,13 +20,14 @@
 .formulario fieldset {
     border: none;
     }
+
     legend {
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: var(--blanco);
+    color: $blanco;
 }
 
 
@@ -59,12 +60,13 @@
 }
 .campo {
     margin-bottom: 1rem;
-}
-.campo label {
+    
+    label {
     color: var(--primario-obscuro);
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
+  }
 }
 .campo textarea {
     height: 15rem;

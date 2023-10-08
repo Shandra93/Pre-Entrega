@@ -17,6 +17,7 @@
 
     &:hover {
         background-image: linear-gradient(to bottom, $primary 0%, $negro 100%);
+        color: $blanco;
     }
 
 }
@@ -32,5 +33,5 @@
 }
 
 .iconos {
-    color: var(--negro);
+    color: $negro;
 }

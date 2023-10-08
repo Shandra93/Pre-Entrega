@@ -21,13 +21,13 @@
     grid-row: 1 / 5;
     border-radius: 2rem;
     margin: 1rem;
-}
-
-.one > * {
+    
+    * {
     display: flex;
     text-align: center;
     justify-content: center;
     margin-bottom: 5rem;
+    }   
 }
 
 .one_head {
@@ -58,18 +58,18 @@
     height: 30rem;
     margin: 1rem;
     border-radius: 2rem;
-}
-
-.four > h2 {
+    
+    h2 {
     text-align: center;
     margin: 0 auto;
     padding: 2rem;
     color: $primary-dark;
-}
-
-.four > p {
+    }
+    
+    p {
     text-align: center;
     margin: 0rem;
+    }
 }
 
 @media (min-width: 768px) {

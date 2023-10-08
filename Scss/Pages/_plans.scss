@@ -1,5 +1,14 @@
 /* Plans */
 
+/** Servicios **/
+
+@media (max-width: 1250px) {
+    .pricing-container {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
 .pricing-container {
     display: flex;
     justify-content: center;
