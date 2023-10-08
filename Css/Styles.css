@@ -226,15 +226,13 @@ p {
   margin: 1rem;
   border-radius: 2rem;
 }
-
-.four > h2 {
+.four h2 {
   text-align: center;
   margin: 0 auto;
   padding: 2rem;
   color: #901111;
 }
-
-.four > p {
+.four p {
   text-align: center;
   margin: 0rem;
 }
@@ -268,6 +266,13 @@ p {
 }
 
 /* Plans */
+/** Servicios **/
+@media (max-width: 1250px) {
+  .pricing-container {
+    flex-direction: column;
+    height: 100%;
+  }
+}
 .pricing-container {
   display: flex;
   justify-content: center;
