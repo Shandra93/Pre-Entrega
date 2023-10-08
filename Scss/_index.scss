@@ -1,15 +1,8 @@
-@import "contact";
-@import "features";
-@import "Colors";
-@import "profile";
-@import "plans";
-@import "globales";
-
 /* Boton */
 
 .boton {
     background-color: var(--primario-obscuro  );
-    color: var(--blanco);
+    color: $blanco;
     padding: 1rem;
     margin-top: 1rem;
     font-size: 2rem;

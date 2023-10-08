@@ -1,3 +1,5 @@
+
+
 /* Profile */
 .profile-container {
     padding: 1rem;
@@ -15,7 +17,7 @@
 }
 
 .one {
-    border-color: var(--blanco);
+    border-color: $blanco;
     background-image: linear-gradient(to top, var(--negro) 0% , var(--blanco) 100%);
     grid-column: 1 / 2;
     grid-row: 1 / 5;
@@ -36,7 +38,7 @@
 }
 
 .two {
-    border-color: var(--negro);
+    border-color: $negro;
     background-image: linear-gradient(to top, var(--negro) 0% , var(--blanco) 100%);
     grid-column: 2 / 5;
     grid-row: 1 / 2;
@@ -46,7 +48,7 @@
 }
 
 .four {
-    border-color: var(--secundario);
+    border-color: $secundario;
     background-image: linear-gradient(to top, var(--negro) 0% , var(--blanco) 100%);
     grid-column: 2 / 5;
     grid-row: 2 / 5;
@@ -60,7 +62,7 @@
     text-align: center;
     margin: 0 auto;
     padding: 2rem;
-    color: var(--primario-obscuro);
+    color: $primary-dark;
 }
 
 .four > p {
@@ -73,7 +75,7 @@
         display: grid;
         grid-template-columns: repeat(4 , 1fr);
         gap: .5rem;
-        background-color: var(--negro   );
+        background-color: $negro;
         grid-auto-rows: minmax(10rem, auto);
         border-radius: 2rem; 
         margin: 0 auto;
