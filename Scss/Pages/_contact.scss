@@ -1,4 +1,27 @@
 /* Contacto */
+body {
+    background-image: linear-gradient(to bottom, black 0%, #fb0101 100%);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    height: 100%;
+  }
+
+.contact_text {
+    margin: 5rem;
+    width: min(50rem);
+
+    div {
+        background-image: linear-gradient(to bottom, $Gray 0%, $Black 100% );
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        margin: 0 auto;
+        padding: 2rem;
+        border: 5rem;
+        border-radius: 1rem;
+    }
+}
 
 .formulario {
     background-image: linear-gradient(to bottom, $Gray 0%, $Black 100% );
@@ -6,7 +29,7 @@
     flex-direction: column;
     justify-content: space-around;
 
-    width: min(30rem);
+    width: min(50rem);
     margin: 0 auto;
     padding: 2rem;
     border: 5rem;
@@ -14,7 +37,8 @@
 }
 
 .seccion_1 {
-    margin: 2rem;
+    margin-top: 20rem;
+    padding-top: 20rem;
 }
 
 .formulario fieldset {
@@ -50,3 +74,4 @@
     padding: 1.5rem;
     border-radius: .5rem;
 }
+

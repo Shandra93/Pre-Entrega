@@ -57,7 +57,7 @@
     }
 
     .formulario {
-        width: min(60rem);
+        width: 70rem;
     }
 
     .campo:nth-child(3),
@@ -92,17 +92,6 @@
         align-items: center;
         margin: 5rem;
         row-gap: 4rem;
-    }
-}
-
-@media (min-width: 370px) {
-    /* Estilos adicionales para formulario en pantallas más grandes */
-    .formulario {
-        width: min(40rem);
-    }
-
-    .seccion_1 {
-        margin: 2rem;
     }
 }
 
