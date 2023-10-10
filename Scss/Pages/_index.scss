@@ -21,10 +21,10 @@
     background-image: url(../Assets/dungeons-and-dragons-leker-guci.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 500px;
     position: relative;
     border-radius: 1rem;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .contenido-hero {
@@ -37,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 5rem;
+    padding: 2rem;
     justify-content: center;
     border-radius: 1rem;
 
@@ -45,14 +45,40 @@
 .contenido-hero h2, 
 .contenido-hero p {
     color: $White;
+    padding: .5rem;
 }
 .contenido-hero .ubicacion {
     display: flex;
     align-items: flex-end;
+    margin: 0;
 }
 
 .hero2 {
-    background-image: linear-gradient(to top, $Black 0%, $Secondary 50%, $Primary-dark 100%);
+    background-image: url(../Assets/OwlBear.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    border-radius: 1rem;
+    margin: 1rem;}
+
+    .contenido-hero2 {
+        position: absolute;
+        background-color:rgb( 0 0 0 / 70% );
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5rem;
+        justify-content: center;
+        border-radius: 1rem;
+        
+        h2, p {
+        color: $White;
+    }
 }
 
 

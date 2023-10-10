@@ -4,6 +4,7 @@
     color: $Secondary;
     padding: 1rem;
     margin-top: 1rem;
+    margin-bottom: 2rem;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -16,7 +17,7 @@
 
 
     &:hover {
-        background-image: linear-gradient(to bottom, $Primary 0%, $Black 100%);
+        background-image: linear-gradient(to top, $Black 0%, $Primary-dark 100%);
         color: $White;
     }
 
@@ -25,6 +26,7 @@
 @media (min-width: 768px) {
     .boton {
         width: auto;
+        margin-bottom: 2rem;
     }       
 }
 

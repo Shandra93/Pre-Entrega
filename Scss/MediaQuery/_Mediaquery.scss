@@ -25,6 +25,17 @@
         background-image: url(../Assets/Articles_Header.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        height: 500px;
+
+        p {
+            color: $White;
+        }
+    }
+
+    .contenido-hero2 {
+        background-image: url(Assets/OwlBear.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 450px;
 
         p {
