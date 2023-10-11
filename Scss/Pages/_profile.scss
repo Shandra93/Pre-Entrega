@@ -24,7 +24,7 @@ body {
 
 .one {
     border-color: $White;
-    background-image: linear-gradient(to top, $Black 0% , $White 100%);
+    background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
     grid-column: 1 / 2;
     grid-row: 1 / 5;
     border-radius: 2rem;
@@ -32,6 +32,7 @@ body {
     
     * {
     display: flex;
+    color: $White;
     text-align: center;
     justify-content: center;
     margin-bottom: 5rem;

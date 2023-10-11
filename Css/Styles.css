@@ -204,7 +204,7 @@ body {
 
 .one {
   border-color: #fff;
-  background-image: linear-gradient(to top, #000000 0%, #fff 100%);
+  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   grid-column: 1/2;
   grid-row: 1/5;
   border-radius: 2rem;
@@ -212,6 +212,7 @@ body {
 }
 .one * {
   display: flex;
+  color: #fff;
   text-align: center;
   justify-content: center;
   margin-bottom: 5rem;
@@ -322,11 +323,11 @@ body {
 .pricing-container .plan-features, .pricing-container .plan-title {
   font-weight: 700;
   list-style: none;
-  background-image: linear-gradient(to top, #f0e1a4 0%, #fff 100%);
+  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   border-radius: 1rem;
   padding: 1rem;
   margin: 1rem;
-  background-image: linear-gradient(to bottom, #f0e1a4 0%, #fff 100%);
+  background-image: linear-gradient(to bottom, #901111 20%, #000000 100%);
   border-radius: 1rem;
 }
 .pricing-container .plan-features li {
