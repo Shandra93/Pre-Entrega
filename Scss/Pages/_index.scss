@@ -1,7 +1,4 @@
 /* Titulos */
-
-
-
 .header {
     background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
     font-size: auto;
@@ -13,9 +10,24 @@
     display: flex;
     border-radius: 2rem;
     margin: 1rem;
+
+    svg:hover {
+        animation: wave-animation 0.3s infinite;
+    }
 }
 
-
+@keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+  }
 
 .hero {
     background-image: url(../Assets/dungeons-and-dragons-leker-guci.jpg);
@@ -40,7 +52,6 @@
     padding: 2rem;
     justify-content: center;
     border-radius: 1rem;
-
 }
 .contenido-hero h2, 
 .contenido-hero p {

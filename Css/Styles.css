@@ -68,7 +68,21 @@ h3 {
   border-radius: 2rem;
   margin: 1rem;
 }
+.header svg:hover {
+  animation: wave-animation 0.3s infinite;
+}
 
+@keyframes wave-animation {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+}
 .hero {
   background-image: url(../Assets/dungeons-and-dragons-leker-guci.jpg);
   background-repeat: no-repeat;
