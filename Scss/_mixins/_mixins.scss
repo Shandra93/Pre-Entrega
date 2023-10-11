@@ -3,3 +3,30 @@
     display: flex;
     text-align: center;
 }
+
+@mixin color {
+    background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
+}
+
+@mixin animation {
+    /* Boton index 
+    Change svg for something else*/
+
+    /*Your item or element here*/:hover {
+        animation: wave-animation 0.3s infinite;
+    }
+
+
+@keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+  }
+}
