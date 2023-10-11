@@ -3,7 +3,7 @@ ul {
     grid-auto-flow: row;
     grid-gap: 24px;
     justify-items: center;
-    margin: auto;
+    margin: 3rem;
   }
   
   @media (min-width: 500px) {
@@ -30,17 +30,25 @@ ul {
   li:hover ~ li p {
     animation: wave-animation 0.3s infinite;
   }
+
   
   /* below is just for demo styling */
   
   .footer {
+    @include color;
     display: flex;
     height: 10rem;
     width: 100%;
-    background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
     line-height: 1.3;
     font-family: Menlo, monospace;
+    justify-content: center;
+    margin-top: 5rem;
+
+    P{
+      padding: 0rem;
+    }
   }
+
   
   @keyframes wave-animation {
     0%,

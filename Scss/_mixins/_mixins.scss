@@ -9,13 +9,6 @@
 }
 
 @mixin animation {
-    /* Boton index 
-    Change svg for something else*/
-
-    /*Your item or element here*/:hover {
-        animation: wave-animation 0.3s infinite;
-    }
-
 
 @keyframes wave-animation {
     0%,

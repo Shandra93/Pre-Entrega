@@ -120,7 +120,7 @@ h3 {
 }
 
 .hero2 {
-  background-image: url(../Assets/OwlBear.jpeg);
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
   height: 450px;
@@ -146,18 +146,25 @@ h3 {
   color: #fff;
 }
 
-.servicio {
+.servicios {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+}
+
+.servicio {
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   z-index: -1;
   border-radius: 1rem;
-  margin: 1rem;
+  margin: 5rem;
 }
 
 p {
+  padding: 3rem;
   line-height: 2;
   text-align: center;
 }
@@ -188,12 +195,32 @@ body {
   height: 100%;
 }
 
+.Character {
+  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
+  padding: 5rem;
+  justify-content: center;
+  margin: 0 auto 2rem auto;
+  border-radius: 2rem;
+  width: 50rem;
+  grid-column: 1/2;
+  grid-row: 3/5;
+}
+.Character div {
+  text-align: center;
+  padding: 5rem;
+}
+.Character h2 {
+  color: #f0e1a4;
+}
+
 .profile-container {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
+  border-radius: 2rem;
   width: 50rem;
   border-radius: 2rem;
 }
@@ -203,12 +230,13 @@ body {
 }
 
 .one {
-  border-color: #fff;
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
+  border-color: #fff;
   grid-column: 1/2;
-  grid-row: 1/5;
+  grid-row: 1/3;
   border-radius: 2rem;
   margin: 1rem;
+  width: 45rem;
 }
 .one * {
   display: flex;
@@ -217,8 +245,20 @@ body {
   justify-content: center;
   margin-bottom: 5rem;
 }
-.one .player:hover {
-  size: 7rem;
+
+.player:hover {
+  animation: wave-animation 0.6s infinite;
+}
+@keyframes wave-animation {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
 }
 
 .one_head {
@@ -227,43 +267,64 @@ body {
 }
 
 .two {
-  border-color: #000000;
-  background-image: linear-gradient(to top, #000000 0%, #fff 100%);
+  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
+  color: #fff;
+  border-color: solid #000000;
   grid-column: 2/5;
   grid-row: 1/3;
   border-radius: 2rem;
   margin: 1rem;
   text-align: center;
+  padding: 2rem;
+  width: 45rem;
+}
+.two h2 {
+  color: #f0e1a4;
 }
 
 .stats {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 .four {
+  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   border-color: #f0e1a4;
-  background-image: linear-gradient(to top, #000000 0%, #fff 100%);
   grid-column: 2/5;
   grid-row: 3/5;
-  height: 35rem;
+  width: 45rem;
   margin: 1rem;
   border-radius: 2rem;
+  border-color: solid #000000;
 }
 .four h2 {
   text-align: center;
   margin: 0 auto;
   padding: 2rem;
-  color: #901111;
+  color: #f0e1a4;
 }
 .four p {
   text-align: center;
   margin: 0;
 }
 
+.statweights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.statweights p {
+  padding: 1rem;
+}
+.statweights div {
+  color: #fff;
+}
+
 .five {
+  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   border-color: #f0e1a4;
-  background-image: linear-gradient(to top, #000000 0%, #fff 100%);
   grid-column: 5/1;
+  min-width: 45rem;
   height: 100%;
   border-radius: 2rem;
   margin: 1rem;
@@ -280,18 +341,30 @@ body {
 }
 
 .Bio {
-  background-image: linear-gradient(to top, #000000 0%, #fff 100%);
+  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  width: 50rem;
+  width: 45rem;
   border-radius: 2rem;
 }
 .Bio div {
   text-align: center;
   padding: 5rem;
+}
+.Bio h2 {
+  color: #f0e1a4;
+}
+
+.Bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50rem; /* Esto centra el contenido en la altura de la ventana (viewport height) */
+  margin-bottom: 5rem;
 }
 
 /* Plans */
@@ -494,7 +567,7 @@ ul {
   grid-auto-flow: row;
   grid-gap: 24px;
   justify-items: center;
-  margin: auto;
+  margin: 3rem;
 }
 
 @media (min-width: 500px) {
@@ -523,12 +596,17 @@ li:hover ~ li p {
 
 /* below is just for demo styling */
 .footer {
+  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   display: flex;
   height: 10rem;
   width: 100%;
-  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   line-height: 1.3;
   font-family: Menlo, monospace;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.footer P {
+  padding: 0rem;
 }
 
 @keyframes wave-animation {
@@ -572,7 +650,7 @@ li:hover ~ li p {
     color: #fff;
   }
   .contenido-hero2 {
-    background-image: url(Assets/OwlBear.jpeg);
+    background-image: linear-gradient(to top, #901111 20%, #000000 100%);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -584,7 +662,7 @@ li:hover ~ li p {
   .servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 4rem;
+    column-gap: 5rem;
     margin: 3rem 1rem 5rem 1rem;
   }
   .contenido-hero2 {
@@ -620,26 +698,23 @@ li:hover ~ li p {
     border-radius: 2rem;
     width: 100rem;
   }
+  .one, .two, .four, .five {
+    min-width: 45rem;
+  }
   .Bio {
     margin-top: 5rem;
     width: 100rem;
   }
-}
-@media (max-width: 767px) {
-  /* Estilos para servicios en pantallas pequeñas */
-  .servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5rem;
-    row-gap: 4rem;
+  .pricing-container {
+    display: grid;
+    flex-direction: row;
+    height: 100%;
+    width: auto;
   }
 }
-@media (max-width: 1250px) {
-  /* Estilos para pricing-container en pantallas más pequeñas */
-  .pricing-container {
-    flex-direction: column;
-    height: 100%;
+@media (min-width: 500px) {
+  ul {
+    grid-auto-flow: column;
   }
 }
 

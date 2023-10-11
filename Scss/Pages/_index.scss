@@ -1,6 +1,6 @@
 /* Titulos */
 .header {
-    background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
+    @include color;
     font-size: auto;
     color: $White;
     height: 13rem;
@@ -19,15 +19,15 @@
 @keyframes wave-animation {
     0%,
     100% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     25% {
-      transform: rotate(20deg);
+        transform: rotate(20deg);
     }
     75% {
-      transform: rotate(-15deg);
+        transform: rotate(-15deg);
     }
-  }
+}
 
 .hero {
     background-image: url(../Assets/dungeons-and-dragons-leker-guci.jpg);
@@ -65,7 +65,7 @@
 }
 
 .hero2 {
-    background-image: url(../Assets/OwlBear.jpeg);
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
@@ -92,20 +92,26 @@
     }
 }
 
+.servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 
 .servicio {
+    @include color;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
     z-index: -1;
     border-radius: 1rem;
-    margin: 1rem;
+    margin: 5rem;
     
 }
     
     p {
+    padding: 3rem;
     line-height: 2;
     text-align: center;
 }
