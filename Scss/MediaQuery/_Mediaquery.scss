@@ -25,7 +25,7 @@
         background-image: url(../Assets/Articles_Header.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 500px;
+        height: 700px;
 
         p {
             color: $White;
@@ -66,7 +66,6 @@
     .servicios {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 5rem;
         margin: 3rem 1rem 5rem 1rem;
     }
 
@@ -87,7 +86,7 @@
     }
 
     .formulario {
-        width: 70rem;
+        width: 60rem;
     }
 
     .campo:nth-child(3),
