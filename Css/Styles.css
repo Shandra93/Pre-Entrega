@@ -11,7 +11,7 @@ html {
 
 /** Globales **/
 body {
-  background-image: linear-gradient(to bottom, black 0%, #fb0101 100%);
+  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   font-size: 1.6rem;
   line-height: 1.5;
   height: 100%;
@@ -509,11 +509,8 @@ body {
 }
 
 /* Contacto */
-body {
-  background-image: linear-gradient(to bottom, black 0%, #fb0101 100%);
-  font-size: 1.6rem;
-  line-height: 1.5;
-  height: 100%;
+.contenido-Contacto h2 {
+  color: #f0e1a4;
 }
 
 .contact_text {
@@ -544,8 +541,8 @@ body {
 }
 
 .seccion_1 {
-  margin-top: 20rem;
-  padding-top: 20rem;
+  margin: 50rem;
+  padding: 50rem;
 }
 
 .formulario fieldset {

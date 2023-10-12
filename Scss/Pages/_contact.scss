@@ -1,10 +1,11 @@
 /* Contacto */
-body {
-    background-image: linear-gradient(to bottom, black 0%, #fb0101 100%);
-    font-size: 1.6rem;
-    line-height: 1.5;
-    height: 100%;
+
+.contenido-Contacto{
+    h2 {
+        color: $Secondary;
+    }
 }
+
 
 .contact_text {
     margin: 5rem;
@@ -37,8 +38,8 @@ body {
 }
 
 .seccion_1 {
-    margin-top: 20rem;
-    padding-top: 20rem;
+    margin: 50rem;
+    padding: 50rem;
 }
 
 .formulario fieldset {
