@@ -37,12 +37,12 @@ ul {
   .footer {
     @include color;
     display: flex;
-    height: 10rem;
+    height: 100%;
     width: 100%;
     line-height: 1.3;
     font-family: Menlo, monospace;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
 
     P{
       padding: 0rem;

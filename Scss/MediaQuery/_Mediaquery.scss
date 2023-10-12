@@ -118,8 +118,8 @@
         width: 100rem;
     }
 
-    .pricing-container {
-        flex-direction: row;
+    .precio-container {
+        flex-direction: column;
         height: 100%;
         justify-content: space-evenly;
         margin-top: 5rem;
@@ -129,5 +129,15 @@
 @media (min-width: 500px) {
     ul {
     grid-auto-flow: column;
+    }
+    
+}
+
+@media (max-width: 1250px) {
+    .pricing-container {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        margin-top: 5rem;
     }
 }

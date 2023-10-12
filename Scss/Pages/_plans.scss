@@ -1,7 +1,5 @@
 /* Plans */
 
-
-
 .pricing-container {
     display: flex;
     justify-content: center;
@@ -44,6 +42,8 @@
     
     .plan-features li {
         margin-bottom: 1rem;
+        text-align: center;
+        justify-content: center;    
     }
     
     .plan-button {
@@ -57,7 +57,7 @@
         padding-right: 5rem;
 
         &:hover {
-            background-image: linear-gradient(to bottom, $Secondary-dark 0%, $Black 100%);
+            background-image: linear-gradient(to bottom, $Primary-dark 0%,  $Gray 50%, $Black 100%);
         }
     }
 }
@@ -90,4 +90,33 @@
     color: $White;
 }
 
+.precio-container {
+    @include color;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    gap: 5rem;
 
+    .precio_h2 {
+        color: $White;
+        padding: 3rem;
+        margin: 0 auto;
+        text-transform: uppercase;
+    }
+
+
+    .precio-features {
+        background-image: linear-gradient(to top, $Black 0%, $Gray 100%);
+        border-radius: 2rem;
+        justify-content: space-around;
+        margin: 0 5rem 2rem 5 rem;
+
+        li {
+            margin: 0 5rem 0 5rem;
+            color: $White;
+            text-decoration: none;
+            padding: 1rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
