@@ -129,28 +129,31 @@ body {
 
 .hero2 {
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50rem;
+  height: 60rem;
   position: relative;
   border-radius: 1rem;
   margin: 1rem;
+  z-index: 0;
 }
 
 .contenido-hero2 {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
+  background-color: rgba(19, 18, 18, 0.836);
+  height: 56rem;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 5rem;
   justify-content: center;
   border-radius: 1rem;
+  margin-top: 3rem;
 }
 .contenido-hero2 h2, .contenido-hero2 p {
+  padding: 3rem;
   color: #fff;
 }
 
@@ -158,9 +161,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 4rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  gap: 4rem;
 }
 .servicios .servicio {
   display: flex;
@@ -472,15 +475,35 @@ body {
   margin: 5rem;
 }
 
-.video1 {
-  justify-content: center;
+.features-hero {
+  background-image: url(../Assets/dungeons-and-dragons-leker-guci.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  border-radius: 1rem;
+  margin: 2rem;
+}
+
+.contenido-features {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 5rem;
-  padding: 5rem;
-  border: 5rem;
-  height: 50%;
-  width: 1rem;
-  height: 1rem;
+  text-align: center;
+  padding: 1rem;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.contenido-features h2 {
+  color: #f0e1a4;
+}
+.contenido-features p {
+  color: #fff;
+  padding: 0.5rem;
 }
 
 .feature-text {
@@ -709,14 +732,27 @@ li:hover ~ li p {
   .contenido-plans p {
     color: #fff;
   }
-  .contenido-hero2 {
+  .features-hero {
+    background-image: url(/Pre-entrega3-Shandra-Uribe/Assets/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+  }
+  .contenido-features {
     background-image: linear-gradient(to top, #901111 20%, #000000 100%);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
   }
-  .contenido-hero2 p {
+  .contenido-features p {
     color: #fff;
+  }
+  .contenido-features h2 {
+    padding-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    color: #f0e1a4;
   }
   /* Estilos para servicios */
   .servicios {

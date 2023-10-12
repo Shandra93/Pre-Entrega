@@ -51,16 +51,33 @@
         }
     }
 
-    .contenido-hero2 {
+    .features-hero {
+        background-image: url(/Pre-entrega3-Shandra-Uribe/Assets/Banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+    }
+         
+    .contenido-features {
         @include color;
         background-repeat: no-repeat;
         background-size: cover;
         height: 450px;
-
+        
         p {
-            color: $White;
+                color: $White;
         }
+        
+        h2{
+            padding-top: 5rem;
+            justify-content: center;
+            align-items: center;
+            color: $Secondary;
+        }
+    
     }
+
 
     /* Estilos para servicios */
     .servicios {
