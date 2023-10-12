@@ -6,40 +6,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50rem;
     gap: 3rem;
-    margin-top: 3rem;
+    height: 50rem;
     
     
     .pricing-plan {
         flex: 1;
         max-width: 40rem;
+        background-image: linear-gradient(to bottom, $Gray 0%, $Black 50%, $Primary 100%);
         padding: 2rem;
-        border-radius: 5px;
+        border-radius: 1rem;
         text-align: center;
     }
 
     .plan-price {
         font-size: 5rem;
         font-weight: bold;
-        color: $Black;
+        color: $White;
         margin-bottom: 10px;
         
         &:hover {
             font-weight: 700;
-            color: $White;
+            color: $Primary-dark;
         }
     }
     
     .plan-features, .plan-title  {
+        @include color;
         font-weight: 700;
         list-style: none;
-        background-image: linear-gradient(to top, $Primary-dark 20%, $Black 100%);
         border-radius: 1rem;
         padding: 1rem;
         margin: 1rem;
-        background-image: linear-gradient(to bottom, $Primary-dark 20%, $Black 100%);
         border-radius: 1rem;
+        color: $Secondary;
     }
     
     .plan-features li {
@@ -62,5 +62,32 @@
     }
 }
 
+
+.plans_hero {
+    background-image: url(../Assets/dungeons-and-dragons-leker-guci.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.contenido-plans {
+    position: absolute;
+    background-color:rgb( 0 0 0 / 70% );
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.contenido-plans h2, 
+.contenido-hero p {
+    color: $White;
+}
 
 

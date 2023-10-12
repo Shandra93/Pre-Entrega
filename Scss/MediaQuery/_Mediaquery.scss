@@ -32,6 +32,25 @@
         }
     }
 
+    .contenido-plans {
+        background-image: url(/Pre-entrega3-Shandra-Uribe/Assets/door.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+
+        h2{
+            padding-top: 5rem;
+            justify-content: center;
+            align-items: center;
+            color: $Secondary;
+        }
+
+        p {
+            color: $White;
+        }
+    }
+
     .contenido-hero2 {
         @include color;
         background-repeat: no-repeat;
@@ -100,10 +119,10 @@
     }
 
     .pricing-container {
-        display: grid;
         flex-direction: row;
         height: 100%;
-        width: auto;
+        justify-content: space-evenly;
+        margin-top: 5rem;
     }
 }
 
