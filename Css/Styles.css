@@ -132,19 +132,17 @@ body {
   background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60rem;
   position: relative;
+  min-height: 40rem;
   border-radius: 1rem;
   margin: 1rem;
-  z-index: 0;
 }
 
 .contenido-hero2 {
   position: absolute;
   background-color: rgba(19, 18, 18, 0.836);
-  height: 56rem;
-  z-index: 4;
-  display: flex;
+  min-height: 30rem;
+  display: grid;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -152,26 +150,31 @@ body {
   border-radius: 1rem;
   margin-top: 3rem;
 }
-.contenido-hero2 h2, .contenido-hero2 p {
-  padding: 3rem;
+.contenido-hero2 h2 {
+  color: #f0e1a4;
+  text-align: center;
+  padding: 3rem 2rem 0 2rem;
+}
+.contenido-hero2 p {
   color: #fff;
+  text-align: center;
+  padding: 0 3rem 0 3rem;
 }
 
 .servicios {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  justify-content: space-around;
+  margin: 3rem;
   gap: 4rem;
 }
 .servicios .servicio {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: start;
   align-items: center;
   border-radius: 2rem;
-  margin: 0 3rem 0 3rem;
+  margin: 0 2rem 0 2rem;
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
 }
 .servicios .servicio h3 {
@@ -191,6 +194,11 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.Bio {
+  display: flex;
+  padding: 3rem;
 }
 
 /* Profile */
@@ -214,17 +222,17 @@ body {
 
 .Character {
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
-  justify-content: center;
-  margin: 0 auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   border-radius: 2rem;
-  height: 40rem;
+  min-height: 30rem;
   grid-column: 1/2;
   grid-row: 3/5;
   padding: 2.5rem;
 }
 .Character div {
   text-align: center;
-  padding: 5rem;
 }
 .Character p {
   display: flex;
@@ -240,11 +248,10 @@ body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   margin: 2rem auto 2rem auto;
   border-radius: 2rem;
-  column-gap: 3rem;
-  row-gap: 3rem;
+  gap: 3rem;
 }
 
 .navbar {
@@ -257,7 +264,7 @@ body {
   grid-column: 1/2;
   grid-row: 1/3;
   border-radius: 2rem;
-  margin: 1rem;
+  min-height: 30rem;
 }
 .one * {
   display: flex;
@@ -294,9 +301,9 @@ body {
   border-color: solid #000000;
   color: #fff;
   text-align: center;
-  margin: 1rem;
   padding: 2rem;
   border-radius: 2rem;
+  min-height: 30rem;
 }
 .two h2 {
   color: #f0e1a4;
@@ -312,9 +319,10 @@ body {
   border-color: #f0e1a4;
   grid-column: 2/5;
   grid-row: 3/5;
-  margin: 1rem;
+  min-height: 30rem;
   border-radius: 2rem;
   border-color: solid #000000;
+  padding: 2.5rem;
 }
 .four h2 {
   text-align: center;
@@ -348,6 +356,7 @@ body {
   margin: 1rem;
   text-align: center;
   justify-content: center;
+  min-height: 30rem;
 }
 .five P {
   color: #fff;
@@ -476,11 +485,13 @@ body {
 }
 
 .features-hero {
-  background-image: url(../Assets/dungeons-and-dragons-leker-guci.jpg);
+  background-image: url(/Pre-entrega3-Shandra-Uribe/Assets/church.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
-  position: relative;
+  min-height: 50rem;
+  min-width: 30rem;
+  width: auto;
+  position: sticky;
   border-radius: 1rem;
   margin: 2rem;
 }
@@ -488,7 +499,8 @@ body {
 .contenido-features {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
+  min-width: 30rem;
+  max-width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -514,9 +526,16 @@ body {
   margin: 10rem 10rem 0rem 10rem;
 }
 
-.feature_header > p {
-  margin: 0 10rem 10rem 10rem;
-  color: #fff;
+.display-4 {
+  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
+  height: 8rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.py-5 {
+  padding: 0 !important;
 }
 
 /* Contacto */
@@ -733,17 +752,14 @@ li:hover ~ li p {
     color: #fff;
   }
   .features-hero {
+    height: 500px;
+    width: 95%;
+  }
+  .contenido-features {
     background-image: url(/Pre-entrega3-Shandra-Uribe/Assets/Banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
-    width: 100%;
-  }
-  .contenido-features {
-    background-image: linear-gradient(to top, #901111 20%, #000000 100%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
+    height: 50rem;
   }
   .contenido-features p {
     color: #fff;
@@ -758,14 +774,17 @@ li:hover ~ li p {
   .servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 3rem 1rem 5rem 1rem;
+    gap: 0rem;
+    margin: 0;
+  }
+  .hero2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
   }
   .contenido-hero2 {
     padding: 0 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    gap: 20px;
   }
   /* Estilos para contenedor-campos y formulario */
   .contenedor-campos {
@@ -793,11 +812,24 @@ li:hover ~ li p {
     border-radius: 2rem;
     width: 100rem;
   }
+  .profile-container .one {
+    margin-right: 1.5rem;
+  }
+  .profile-container .two {
+    margin-left: 1.5rem;
+  }
+  .profile-container .four {
+    margin-left: 1.5rem;
+  }
+  .profile-container .character {
+    margin-right: 1.5rem;
+  }
   .one, .two, .four, .five {
     min-width: 45rem;
   }
   .Bio {
     margin-top: 5rem;
+    margin-bottom: 5rem;
     width: 100rem;
   }
   .precio-container {
