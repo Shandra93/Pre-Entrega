@@ -244,6 +244,10 @@ body {
   color: #f0e1a4;
 }
 
+.navbar {
+  margin-bottom: 2rem;
+}
+
 .profile-container {
   padding: 1rem;
   display: flex;
@@ -253,28 +257,22 @@ body {
   border-radius: 2rem;
   gap: 3rem;
 }
-
-.navbar {
-  margin-bottom: 2rem;
-}
-
-.one {
+.profile-container .one {
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
-  border-color: #fff;
   grid-column: 1/2;
   grid-row: 1/3;
   border-radius: 2rem;
   min-height: 30rem;
 }
-.one * {
+.profile-container .one * {
   display: flex;
   color: #fff;
   text-align: center;
   justify-content: center;
   margin-bottom: 5rem;
+  border-color: #fff;
 }
-
-.player:hover {
+.profile-container .one .player:hover {
   animation: wave-animation 0.6s infinite;
 }
 @keyframes wave-animation {
@@ -288,13 +286,11 @@ body {
     transform: rotate(-15deg);
   }
 }
-
-.one_head {
+.profile-container .one .one_head {
   margin: 0 auto;
   padding: 5rem;
 }
-
-.two {
+.profile-container .two {
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   grid-column: 2/5;
   grid-row: 1/3;
@@ -305,16 +301,14 @@ body {
   border-radius: 2rem;
   min-height: 30rem;
 }
-.two h2 {
+.profile-container .two h2 {
   color: #f0e1a4;
 }
-
-.stats {
+.profile-container .stats {
   margin: 0;
   padding: 0;
 }
-
-.four {
+.profile-container .four {
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   border-color: #f0e1a4;
   grid-column: 2/5;
@@ -324,30 +318,29 @@ body {
   border-color: solid #000000;
   padding: 2.5rem;
 }
-.four h2 {
+.profile-container .four h2 {
   text-align: center;
   margin: 0 auto;
   padding: 2rem;
   color: #f0e1a4;
 }
-.four p {
+.profile-container .four p {
   text-align: center;
   margin: 0;
 }
-.four .statweights {
+.profile-container .four .statweights {
   flex-wrap: wrap;
   justify-content: space-evenly;
   display: flex;
   margin-bottom: 3rem;
 }
-.four p {
+.profile-container .four p {
   padding: 0.3rem;
 }
-.four div {
+.profile-container .four div {
   color: #fff;
 }
-
-.five {
+.profile-container .five {
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   border-color: #f0e1a4;
   grid-column: 5/1;
@@ -358,7 +351,7 @@ body {
   justify-content: center;
   min-height: 30rem;
 }
-.five P {
+.profile-container .five P {
   color: #fff;
   display: flex;
   text-align: center;
