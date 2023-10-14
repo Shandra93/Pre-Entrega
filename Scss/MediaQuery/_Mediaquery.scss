@@ -57,11 +57,12 @@
     }
 
     .contenido-features {
-        background-image: url(/Pre-entrega3-Shandra-Uribe/Assets/Banner.jpg);
+        background-image: url(/Pre-entrega3-Shandra-Uribe/Assets/Banner2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        min-width: 30rem;        
         height: 50rem;
-                
+        
         p {
                 color: $White;
         }
