@@ -6,3 +6,17 @@ estyles.html.css
 
 # Ignore estyles.html.css #
 .hintrc
+
+#Scss
+_contact.scss
+_features.scss
+_index.scss
+_plans.scss
+_profile.scss
+_mediaquery.scss
+_globales.scss
+_footer.scss
+_colors.scss
+_buttons.scss
+_mixins.scss
+_main.scss
