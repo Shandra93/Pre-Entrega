@@ -79,7 +79,7 @@ body {
 
 
 .hero2 {
-    background-image: url(/Pre-entrega3-Shandra-Uribe/Assets/dungeons-and-dragons-leker-guci.jpg);
+    background-image: url(./Assets/dungeons-and-dragons-leker-guci.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -91,7 +91,7 @@ body {
     .contenido-hero2 {
         position: absolute;
         background-color:rgba(19, 18, 18, 0.473);
-        min-height: 45rem;    
+        min-height: 40rem;    
 
         display: grid;
         flex-direction: column;
