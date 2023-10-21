@@ -118,6 +118,7 @@ body {
 }
 .contenido-hero p {
   color: #fff;
+  margin: 2rem;
   padding: 0.5rem;
 }
 
@@ -745,6 +746,7 @@ li:hover ~ li p {
   }
   .contenido-hero p {
     color: #fff;
+    margin: 0 5rem 0 5rem;
   }
   .contenido-plans {
     background-image: url(/Pre-entrega3-Shandra-Uribe/Assets/door.jpg);
