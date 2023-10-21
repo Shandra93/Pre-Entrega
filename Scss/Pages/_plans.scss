@@ -5,6 +5,8 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     height: 50rem;
     
     
@@ -12,7 +14,7 @@
         flex: 1;
         max-width: 40rem;
         min-height: 40rem;
-        background-image: linear-gradient(to bottom, $Gray 0%, $Black 50%, $Primary 100%);
+        background-image: linear-gradient(to top, $Black 0%, $Primary 90%);
         padding: 2rem;
         border-radius: 1rem;
         text-align: center;
