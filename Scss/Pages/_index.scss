@@ -3,7 +3,7 @@ body {
     @include color;
     font-size: 1.6rem;
     line-height: 1.5;
-    height: 150rem;
+    min-height: 150rem;
 }
 
 
@@ -117,27 +117,27 @@ body {
 .servicios {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        margin: 3rem;
-        gap: 4rem;
+        justify-content: space-evenly;
+        margin: 5rem 0 5rem 0;
+        gap: 5rem;
     
     .servicio {
+        @include color;
         display: flex;
         flex-direction: column;
-        justify-content: start;
         align-items: center;
         border-radius: 2rem;
-        margin: 0 2rem 0 2rem;
-        @include color;
+        margin: 0 3rem 0 3rem;
 
         h3 {
             padding-top: 3rem;
+            color: $Secondary;
         }
         
         p {
             line-height: 2;
             text-align: center;
-            padding: 3rem;
+            padding: 3rem 5rem 3rem 5rem;
         }
     }
         .iconos {

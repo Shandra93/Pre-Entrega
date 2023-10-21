@@ -83,12 +83,11 @@
     .servicios {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 0rem;
+        gap: 2rem;
         margin: 0;
 
         .servicio {
-
-        }
+            margin-bottom: 3rem;        }
     }
     
     .hero2 {

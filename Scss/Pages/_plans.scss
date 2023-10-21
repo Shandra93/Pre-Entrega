@@ -71,7 +71,7 @@
         padding: 10px;
         background-image: linear-gradient(to top, $Black 0%, $Primary-dark 100% );
         color: $White;
-        border-radius: 5px;
+        border-radius: 1rem;
         border: none;
         border-color: $Black;
         padding-left: 5rem;
@@ -123,7 +123,6 @@
     @include color;
     height: 100%;
     text-align: center;
-    justify-content: center;
     gap: 5rem;
 
     .precio_h2 {
@@ -133,20 +132,16 @@
         text-transform: uppercase;
     }
 
-
     .precio-features {
-        background-image: linear-gradient(to top, $Black 0%, $Gray 100%);
-        border-radius: 2rem;
+        background-image: linear-gradient(to top, $Black 0%, $Gray 30%, $Primary 60%, $Primary-dark 100%);
         min-width: 15rem;
-        justify-content: space-around;
         margin: 0 5rem 2rem 5 rem;
-
-        li {
-            margin: 0 5rem 0 5rem;
-            color: $White;
-            text-decoration: none;
-            padding: 1rem;
-            margin-bottom: 3rem;
-        }
     }
+}
+
+.plan-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
