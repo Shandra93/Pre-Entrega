@@ -93,7 +93,9 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+        min-height: 45rem;    
         gap: 20px;
+
     }
 
     .contenido-hero2 {
@@ -176,7 +178,7 @@
     
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1000px) {
     .pricing-container {
         flex-direction: column;
         height: 100%;
