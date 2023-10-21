@@ -1,12 +1,5 @@
 /* Profile */
 
-body {
-    background-image: linear-gradient(to bottom, black 0%, $Primary 100% );
-    font-size: 1.6rem;
-    line-height: 1.5;
-    height: 100%;
-}
-
 .Bio {
     @include color;
     display: flex;

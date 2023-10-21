@@ -56,13 +56,6 @@ h3 {
 }
 
 /* Titulos */
-body {
-  background-image: linear-gradient(to top, #901111 20%, #000000 100%);
-  font-size: 1.6rem;
-  line-height: 1.5;
-  min-height: 150rem;
-}
-
 .header {
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   font-size: auto;
@@ -201,13 +194,6 @@ body {
 }
 
 /* Profile */
-body {
-  background-image: linear-gradient(to bottom, black 0%, #fb0101 100%);
-  font-size: 1.6rem;
-  line-height: 1.5;
-  height: 100%;
-}
-
 .Bio {
   background-image: linear-gradient(to top, #901111 20%, #000000 100%);
   display: flex;
