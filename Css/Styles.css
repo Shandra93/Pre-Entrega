@@ -436,7 +436,7 @@ body {
   background-image: url(../Assets/dungeons-and-dragons-leker-guci.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  min-height: 60rem;
   position: relative;
   border-radius: 1rem;
 }
@@ -453,10 +453,13 @@ body {
   justify-content: center;
   border-radius: 1rem;
 }
-
-.contenido-plans h2,
-.contenido-hero p {
+.contenido-plans h2 {
+  color: #f0e1a4;
+  margin: 2rem;
+}
+.contenido-plans p {
   color: #fff;
+  margin: 3rem;
 }
 
 .precio-container {
@@ -751,7 +754,7 @@ li:hover ~ li p {
     background-image: url(/Pre-entrega3-Shandra-Uribe/Assets/door.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    min-height: 50rem;
     width: 100%;
   }
   .contenido-plans h2 {
@@ -762,6 +765,7 @@ li:hover ~ li p {
   }
   .contenido-plans p {
     color: #fff;
+    margin: 3rem;
   }
   .features-hero {
     height: 500px;

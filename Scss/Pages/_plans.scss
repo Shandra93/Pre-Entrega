@@ -89,7 +89,7 @@
     background-image: url(../Assets/dungeons-and-dragons-leker-guci.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    min-height: 60rem;
     position: relative;
     border-radius: 1rem;
 }
@@ -105,11 +105,18 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    border-radius: 1rem;
-}
-.contenido-plans h2, 
-.contenido-hero p {
+    border-radius: 1rem; 
+    
+    h2 {
+        color: $Secondary;
+        margin: 2rem;
+    }
+    
+    p {
     color: $White;
+    margin: 3rem;
+    }
+
 }
 
 .precio-container {

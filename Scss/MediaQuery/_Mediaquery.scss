@@ -37,7 +37,7 @@
         background-image: url(/Pre-entrega3-Shandra-Uribe/Assets/door.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 500px;
+        min-height: 50rem;
         width: 100%;
 
         h2{
@@ -49,6 +49,7 @@
 
         p {
             color: $White;
+            margin: 3rem;
         }
     }
 
