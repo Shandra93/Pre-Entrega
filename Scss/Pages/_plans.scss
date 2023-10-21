@@ -11,6 +11,7 @@
     .pricing-plan {
         flex: 1;
         max-width: 40rem;
+        min-height: 40rem;
         background-image: linear-gradient(to bottom, $Gray 0%, $Black 50%, $Primary 100%);
         padding: 2rem;
         border-radius: 1rem;
@@ -129,6 +130,7 @@
     .precio-features {
         background-image: linear-gradient(to top, $Black 0%, $Gray 100%);
         border-radius: 2rem;
+        min-width: 15rem;
         justify-content: space-around;
         margin: 0 5rem 2rem 5 rem;
 
