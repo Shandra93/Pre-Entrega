@@ -25,7 +25,7 @@
         background-image: url(../Assets/Articles_Header.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 700px;
+        height: 70rem;
 
         p {
             color: $White;
@@ -122,6 +122,14 @@
     }
 
     /* Estilos para profile-container */
+    .Profile-video {
+        display: flex;
+        margin: 0 auto;
+        height: 50rem;
+        min-width: 30rem;        
+        justify-content: center;
+        align-items: center;
+    }
     .profile-container {
         display: grid;
         grid-template-columns: repeat(4 , 1fr);
@@ -158,7 +166,8 @@
     .Bio {
         margin-top: 5rem;
         margin-bottom: 5rem;
-        width: 100rem;
+        min-width: 50rem;
+        min-height: 80rem;
     }
 
     .precio-container {
