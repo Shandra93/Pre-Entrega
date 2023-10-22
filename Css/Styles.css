@@ -32,6 +32,7 @@ h1 {
   font-size: 3.5rem;
   font-family: "Krub", sans-serif;
   font-family: "Playfair Display", serif;
+  color: #f0e1a4;
 }
 
 h2 {
@@ -509,7 +510,7 @@ h3 {
   justify-content: center;
   border-radius: 1rem;
 }
-.contenido-features h2 {
+.contenido-features h1 {
   color: #f0e1a4;
 }
 .contenido-features p {
