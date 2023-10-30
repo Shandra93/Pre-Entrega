@@ -86,9 +86,13 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         margin: 0;
+        min-width: 100%;
 
         .servicio {
-            margin-bottom: 3rem;        }
+            margin-bottom: 3rem;        
+            min-width: 30rem;
+            margin: 0;
+        }
     }
     
     .hero2 {
