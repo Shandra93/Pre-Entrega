@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Pagos</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://openexchangerates.github.io/money.js/money.min.js"></script>
+</head>
+<body>
+
+    <div id="encabezado">
+        <h1> Calcula tu pago</h1>
+        <p>Selecciona tu producto para ayudarte con el plan de pagos:</p>
+    </div>
+
+    <div id="container">
+        <div id="catalogoProductos">
+            <h2>Catálogo de Productos</h2>
+        </div>
+
+        <div id="contenedorCalculadoraCarrito">
+            <div id="carrito">
+                <h2>Carrito de Compras</h2>
+            </div>
+
+            <div id="resultado">                
+            </div>
+
+            <div id="calculadora">
+                <p id="carritoDeComprasText"> Calculadora de pagos </p>
+
+                <label for="montoTotal" style="display: none;"></label>
+                <p id="montoTotal" style="display: none;"></p>
+
+                <label for="moneda">Moneda:</label>
+                <select id="moneda">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+
+                <label for="numeroCuotas">Número de Cuotas:</label>
+                <select id="numeroCuotas">
+                    <option value="3">3 Cuotas</option>
+                    <option value="6">6 Cuotas</option>
+                    <option value="9">9 Cuotas</option>
+                    <option value="12">12 Cuotas</option>
+                    <option value="15">15 Cuotas</option>
+                </select>
+
+                <label for="tasaInteres">Método de pago:</label>
+                <select id="tasaInteres">
+                    <option value="10"> Credito </option>
+                    <option value="15"> Debito </option>
+                    <option value="18"> Efectivo </option>
+                </select>
+
+                <button id="calcularButton" disabled>Calcular Pago</button>
+                <button id="agregarAlCarritoButton">Agregar al Carrito</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./Main.js"></script>
+</body>
+</html>
